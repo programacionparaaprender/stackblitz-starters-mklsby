@@ -18,8 +18,12 @@
 >- npm install popper.js --save
 >- npm install @ng-bootstrap/ng-bootstrap
 
-### error
+### error popper
 >- https://www.tutsmake.com/angular-17-install-add-bootstrap-5-example/#google_vignette
+
+### corrección geocerca
+>- npm install @agm/core
+
 
 npm ls | select-string typescript
 
