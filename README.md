@@ -1,6 +1,7 @@
 
 ### configuración bootstrap nueva
 >- https://www.techiediaries.com/angular-bootstrap/
+>- https://www.tutsmake.com/angular-17-install-add-bootstrap-5-example/#google_vignette
 
 ### error TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI.
 >- https://stackoverflow.com/questions/75047760/typescript-target-warnings-after-angular-15-update
