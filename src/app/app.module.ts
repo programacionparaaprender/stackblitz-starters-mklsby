@@ -71,6 +71,9 @@ import { ContadorAutomaticoComponent } from './contador-automatico/contador-auto
 import { QuarkusComponent } from './quarkus/quarkus.component';
 import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
+
+
+
 @NgModule({
   declarations: [
     MenuNuevoComponent,

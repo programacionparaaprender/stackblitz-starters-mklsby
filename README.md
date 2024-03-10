@@ -2,6 +2,9 @@
 ### configuración bootstrap nueva
 >- https://www.techiediaries.com/angular-bootstrap/
 
+### error TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI.
+>- https://stackoverflow.com/questions/75047760/typescript-target-warnings-after-angular-15-update
+
 ### paquetes instalar
 >- npm install @angular/platform-browser-dynamic
 
@@ -11,6 +14,11 @@
 >- npm install bootstrap
 >- npm install @angular/material
 >- npm install jquery
+>- npm install popper.js --save
+>- npm install @ng-bootstrap/ng-bootstrap
+
+### error
+>- https://www.tutsmake.com/angular-17-install-add-bootstrap-5-example/#google_vignette
 
 npm ls | select-string typescript
 
