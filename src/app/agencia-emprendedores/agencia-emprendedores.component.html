@@ -1,0 +1,40 @@
+<div style="width: 100%; height: 1rem; display: block;"></div>
+<!-- Page content -->
+<div  class="container-fluid" style="max-width:1564px">
+    <div class="card" style="width: 100%;">
+      <div class="card-body">
+        <button 
+          class="btn btn-secondary" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseExample" 
+          aria-expanded="false" 
+          aria-controls="collapseExample">
+          Ejemplos
+        </button>
+        <br>
+        <br>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          <div class="row">
+            <div 
+              *ngFor="let casa of emprender_internetjs"
+              class="col-sm-6 col-md-3">
+              <!--  <h4>{{ casa.nombre }}</h4> -->
+               <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
+                  <img  src="{{casa.src}}" style="width:100%" title="{{ casa.nombre }}">
+                  <p style="overflow: hidden;">{{ casa.nombre }}</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <br>
+        <hr>
+       
+    </div>  
+  
+
+</div>
+

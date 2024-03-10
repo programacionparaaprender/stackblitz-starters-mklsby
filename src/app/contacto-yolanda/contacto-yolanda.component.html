@@ -1,0 +1,63 @@
+
+    <div class="container-fluid">
+       
+      <div class="row" *ngFor="let contacto of contactosjs">
+        <!-- <a target="_blank" href="{{contacto.url}}"></a> --> 
+            <div class="col-sm-6 col-md-3" *ngIf="contacto.id==4">
+              <a target="_blank" href="{{contacto.url}}">
+              <img src="{{contacto.img}}" style="width:100%">
+              </a>
+              <h3>{{contacto.nombre}}</h3>
+              <p>{{contacto.titulo}}</p>
+              <p>{{contacto.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+    
+  <!-- Page content -->
+  <div class="container-fluid" style="max-width:1564px">    
+    <h1 style="text-align:center;">Contador publico</h1>
+    <h2>
+    PROYECTOS
+    </h2>
+    <h3>
+        <ul>
+            <li>Levantamientos</li>
+            <li>Documentos</li>
+            <li>Programas de trabajo</li>
+        </ul>
+    </h3>
+    <h2>
+    ASESORÍA (A nivel nacional)
+    </h2>
+    <h3>
+        <ul>
+            <li>Levantamientos</li>
+            <li>Presupuestos</li>
+            <li>Programas de trabajo</li>
+        </ul>
+    </h3>
+    <div id="carouselExampleIndicators" class="carousel slide col-xl-6 col-md-6 col-lg-6 col-sm-12 col-xs-12" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div 
+          *ngFor="let casa of ventas_madre" 
+            class="carousel-item" 
+            [ngClass]="{'active': casa.id==1}">
+            <a target="_blank" class="dropdown-item" href="{{ casa.href }}">
+              <img class="d-block w-100" src="{{casa.src}}" alt="{{casa.alt}}">
+            </a>
+          </div>
+        
+
+      </div>
+  
+    </div>
+  </div>
+  
+
+

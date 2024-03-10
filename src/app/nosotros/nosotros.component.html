@@ -1,0 +1,23 @@
+<section class="container-fluid">
+  <br>
+  <hr>
+        <h3 style="text-align: center; font-style: italic;">Nosotros</h3>
+        <br>
+        <hr>
+    <div class="row">
+     <div
+        class="col-sm-6 col-md-3"
+        *ngFor="let contacto of contactos">
+        <a target="_blank" href="{{contacto.url}}">
+      <img 
+          src="{{contacto.img}}" 
+          
+          width="250"
+          height="250">
+        </a>
+      <h3 style="font-style: italic !important;">{{contacto.nombre}}</h3>
+      <p style="font-style: italic !important;">{{contacto.titulo}}</p>
+      <p style="font-style: italic !important;">{{contacto.descripcion}}</p>
+    </div> 
+    </div>
+    </section>

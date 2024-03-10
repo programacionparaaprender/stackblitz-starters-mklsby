@@ -1,0 +1,44 @@
+
+    <div class="container-fluid">
+       
+      <div class="row" *ngFor="let contacto of contactosjs">
+        <!-- <a target="_blank" href="{{contacto.url}}"></a> --> 
+            <div class="col-sm-6 col-md-3" *ngIf="contacto.id==5">
+              <a target="_blank" href="{{contacto.url}}">
+              <img src="{{contacto.img}}" style="width:100%">
+              </a>
+              <h3>{{contacto.nombre}}</h3>
+              <p>{{contacto.titulo}}</p>
+              <p>{{contacto.descripcion}}</p>
+            </div>
+        </div>
+    </div>
+    
+  <!-- Page content -->
+  <div class="container-fluid" style="max-width:1564px">    
+    <h1 style="text-align:center;">Medico Cirujano</h1>
+    <h2>
+    PROYECTOS
+    </h2>
+    <h3>
+        <ul>
+            <li>Levantamientos</li>
+            <li>Documentos</li>
+            <li>Programas de trabajo</li>
+        </ul>
+    </h3>
+    <h2>
+    ASESORÍA (A nivel nacional)
+    </h2>
+    <h3>
+        <ul>
+            <li>Levantamientos</li>
+            <li>Presupuestos</li>
+            <li>Programas de trabajo</li>
+        </ul>
+    </h3>
+    
+  </div>
+
+
+
