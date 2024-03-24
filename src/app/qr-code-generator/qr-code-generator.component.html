@@ -1,0 +1,29 @@
+
+  <div class="container-fluid">
+      <div class="qr-generator">
+        <!-- <form  class="wrapper" (ngSubmit)="generarQR()" [formGroup]="registerForm"> -->
+        <form  [formGroup]="registerForm">
+          <div  class="wrapper" #wrapper>
+            <div class="titleqr">
+              <h1>QR Code Generator</h1>
+              <p>Paste a url or enter text to generate QR code</p>
+            </div>
+            <div class="form">
+              <input 
+                id="qrcode" 
+                name="qrcode" 
+                formControlName="qrcode" 
+                type="text" 
+                spellcheck="false" 
+                placeholder="Enter text or url"
+                (keyup)="keyFunc($event)"
+                />
+              <button id="generateBtn" type="button"  #generateBtn (click)="generarQR(wrapper, generateBtn)">Generate QR Code</button>
+            </div>
+            <div class="qr-code">
+              <img id="imgcode" alt="qr-code" src='{{imagen}}' #imgcode />
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>

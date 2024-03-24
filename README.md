@@ -208,6 +208,10 @@ https://stackoverflow.com/questions/53995948/warning-in-budgets-maximum-exceeded
 https://www.npmjs.com/package/ngrx-store-persist
 
 
+### página qr code
+>- https://www.instagram.com/p/Cxk6AH4vuZT/?img_index=8
+>- https://www.geeksforgeeks.org/angular-keyup-event/
+
 
 ### Peticiones más sencillas
 https://www.npmjs.com/package/axios

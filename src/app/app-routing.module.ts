@@ -44,7 +44,7 @@ import { LegsComponent } from './applications/views/legs/legs.component';
 import { ArmsComponent } from './applications/views/arms/arms.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { Tio } from './models/tio'
-
+import { QrCodeGeneratorComponent } from './qr-code-generator/qr-code-generator.component';
 var usuario: Tio = {
   id: 1,
   nombre: "error",
@@ -81,6 +81,7 @@ const routes: Routes = [
   {
     path: 'vieja' , component: ViejaComponent
   },
+  { path: 'qr-code' , component: QrCodeGeneratorComponent},
 ];
 
 @NgModule({
