@@ -72,10 +72,11 @@ import { QuarkusComponent } from './quarkus/quarkus.component';
 import { MenuNuevoComponent } from './menu-nuevo/menu-nuevo.component';
 import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { QrCodeGeneratorComponent } from './qr-code-generator/qr-code-generator.component';
-
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
+    SidebarComponent,
     QrCodeGeneratorComponent,
     MenuNuevoComponent,
     MasterAspNetComponent,
