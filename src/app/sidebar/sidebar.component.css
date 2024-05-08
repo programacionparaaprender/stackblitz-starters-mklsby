@@ -40,17 +40,17 @@ button {
   z-index: 1;
   position: fixed;
   top: 24px;
-  left: 24px;
+  left: 0px;
   bottom: 24px;
   display: flex;
   flex-direction: column;
   gap: 8px;
   width: 260px;
-  border-radius: 16px;
+  border-radius: 0px;
   margin: 3rem 0px 0px 0px;
   padding: 0 16px;
   border: 1px solid rgb(255 255 255 / 8%);
-  background: rgb(0 0 0 / 40%);
+  background: rgb(33, 37, 41);
   backdrop-filter: blur(20px);
   transition: width 0.4s;
 }
