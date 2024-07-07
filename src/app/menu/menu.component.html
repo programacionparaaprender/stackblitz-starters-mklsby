@@ -12,10 +12,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="'/'">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/maestria-sanmarcos">Maestría</a>
+            <a class="nav-link active" aria-current="page" [routerLink]="'/maestria-sanmarcos'">Maestría</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,7 +100,7 @@
               Cursos
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a *ngFor="let casa of cursosjs" target="{{casa.target}}" class="dropdown-item" href="{{casa.href}}">
+              <a *ngFor="let casa of cursosjs" target="{{casa.target}}" class="dropdown-item" [routerLink]="casa.href">
                 {{casa.nombre}}
               </a>
             </div>
@@ -112,7 +112,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a *ngFor="let casa of proyectos_realizados_luis" target="_blank" class="dropdown-item"
-                href="{{casa.href}}">
+              [routerLink]="casa.href">
                 {{casa.nombre}}
               </a>
             </div>
@@ -123,9 +123,9 @@
               Agencia
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="agencia_empresas">Empresas</a>
-              <a class="dropdown-item" href="agencia_profesionales">Profesionales</a>
-              <a class="dropdown-item" href="agencia_emprendedores">Emprendedores</a>
+              <a class="dropdown-item" [routerLink]="'agencia_empresas'">Empresas</a>
+              <a class="dropdown-item" [routerLink]="'agencia_profesionales'">Profesionales</a>
+              <a class="dropdown-item" [routerLink]="'agencia_emprendedores'">Emprendedores</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -134,12 +134,12 @@
               Contactos
             </a>
             <div id="headerContactosId" class="dropdown-menu" aria-labelledby="navbarDpdContactos">
-              <a *ngFor="let casa of contactosjs" class="dropdown-item" href="{{casa.href}}">{{casa.nombre}} -
+              <a *ngFor="let casa of contactosjs" class="dropdown-item" [routerLink]="casa.href">{{casa.nombre}} -
                 {{casa.titulo}}</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contacto_empresa">Acerca de</a>
+            <a class="nav-link" [routerLink]="'contacto_empresa'">Acerca de</a>
           </li>
 
         </ul>
