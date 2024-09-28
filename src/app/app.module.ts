@@ -74,6 +74,12 @@ import { MasterAspNetComponent } from './master-aspnet/master-aspnet.component';
 import { QrCodeGeneratorComponent } from './qr-code-generator/qr-code-generator.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+import { taskReducer } from './store/tasks.reducer';
+import { userReducer } from './store/users.reducer';
+import { loginReducer } from './store/login.reducer';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { StoreModule } from '@ngrx/store';
+import { storageSyncMetaReducer } from 'ngrx-store-persist';
 @NgModule({
   declarations: [
     SidebarComponent,
@@ -107,7 +113,18 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MaestriaSanMarcosComponent
   ],
   imports: [
-    
+    StoreDevtoolsModule.instrument({
+      maxAge: 25, // Retains last 25 states
+      logOnly: environment.production, // Restrict extension to log-only mode
+      
+    }),
+    StoreModule.forRoot({
+      tasks: taskReducer,
+      users: userReducer,
+      login: loginReducer
+    }, { 
+      metaReducers: [storageSyncMetaReducer] 
+    }),
   
     FormsModule,
     ReactiveFormsModule,
@@ -115,6 +132,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    StoreModule.forRoot({}, {}),
   ],
   providers: [],
   bootstrap: [AppComponent]

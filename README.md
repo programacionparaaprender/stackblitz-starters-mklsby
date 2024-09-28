@@ -24,6 +24,9 @@
 ### corrección geocerca
 >- npm install @agm/core
 
+### añadir stotes
+>- con powershell node .\node_modules\@angular\cli\bin\ng add @ngrx/store@17.2.0
+>- con powershell node .\node_modules\@angular\cli\bin\ng add  @ngrx/store-devtools@17.2.0
 
 npm ls | select-string typescript
 
